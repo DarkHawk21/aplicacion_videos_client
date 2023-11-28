@@ -6,19 +6,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { VideoComponent } from './components/video/video.component';
-import { MoviesComponent } from './components/movies/movies.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CatalogoComponent } from './components/catalogo/catalogo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    VideoComponent,
-    MoviesComponent,
     HeaderComponent,
     FooterComponent,
+    CatalogoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,24 @@
+<Header></Header>
+
+<div class="container p-5" style="min-height:calc(100vh - 80px);">
+  <h1 class="text-center text-white">Catálogo de imágenes</h1>
+
+  <div class="text-center">
+    <button type="button" class="btn btn-success my-4 mb-5">Añadir</button>
+  </div>
+
+  <div class="container d-flex flex-wrap align-items-start justify-content-center gap-4">
+    <div class="image_container pb-3 bg-light" *ngFor="let item of items">
+      <img src={{ item.imagen }} alt={{ item.id }}>
+
+      <h4 class="text-dark text-center py-3">{{ item.titulo }}</h4>
+
+      <div class="buttons d-flex justify-content-center gap-3">
+        <a href={{ item.imagen }} class="btn btn-primary" target="_blank">Agrandar</a>
+        <button class="btn btn-danger">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<Footer></Footer>
