@@ -7,7 +7,7 @@ import { HttpClient } from "@angular/common/http";
 })
 
 export class CatalogoService {
-  rutaApi = "http://localhost:8000/api/";
+  rutaApi = "https://app-imagenes-api-396204a15f66.herokuapp.com/public/api/";
 
   constructor(private http: HttpClient) {}
 
