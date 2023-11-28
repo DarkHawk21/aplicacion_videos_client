@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { CatalogoService } from './catalogo.service';
 import { FormGroup, FormControl } from '@angular/forms';
 
@@ -14,10 +13,7 @@ export class CatalogoComponent {
   showModal: boolean = false;
   formulario: FormGroup;
 
-  constructor(
-    private catalogoService: CatalogoService,
-    private activatedRoute: ActivatedRoute,
-  ) {
+  constructor(private catalogoService: CatalogoService) {
     this.getItems();
     this.formulario = this.crearFormulario();
   }
